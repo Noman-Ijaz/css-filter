@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Filter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./stlye.css">
+
+</head>
+
+<body>
+
+    <div class="flex border-2 border-[#FCA311] rounded-lg p-5 w-[800px]">
+
+        <div class="p-3 w-[40%] text-[#14213D]">
+            <div>
+                <label for="" id="blur">Blur</label>
+                <input type="range" min="0" max="5" value="0" name="range" class="slider" id="myRange">
+            </div>
+            <div>
+                <label for="" class="">Brightness</label>
+                <input type="range" min="0" max="200" value="100" name="range" class="slider" id="myRange2">
+            </div>
+            <div>
+                <label for="" class="">Contrast</label>
+                <input type="range" min="0" max="200" value="100" name="range" class="slider" id="myRange3">
+            </div>
+            <!-- <div>
+                <label for="" class="">Drop Shadow</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange4">
+            </div> -->
+            <div>
+                <label for="" class="">Grayscale</label>
+                <input type="range" min="0" max="100" value="0" name="range" class="slider" id="myRange5">
+            </div>
+            <div>
+                <label for="" class="">Hue Rotate</label>
+                <input type="range" min="0" max="360" value="0" name="range" class="slider" id="myRange6">
+            </div>
+            <div>
+                <label for="" class="">Invert</label>
+                <input type="range" min="0" max="100" value="0" name="range" class="slider" id="myRange7">
+            </div>
+            <div>
+                <label for="" class="">Opacity</label>
+                <input type="range" min="0" max="100" value="100" name="range" class="slider" id="myRange8">
+            </div>
+            <div>
+                <label for="" class="">Saturate</label>
+                <input type="range" min="1" max="30" value="1" name="range" class="slider" id="myRange9">
+            </div>
+            <div>
+                <label for="" class="">Sepia</label>
+                <input type="range" min="0" max="100" value="0" name="range" class="slider" id="myRange10">
+            </div>
+            <div class="mt-3">
+                <button type="button" class="cursor-pointer bg-[#14213D] text-[#fff] h-[40px] flex items-center px-[1rem] rounded-md font-medium" id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="p-3 flex flex-col items-center w-[60%]">
+            <img src="" id="image" alt="" class="hidden">
+            <canvas id="demo" width="300" height="300" class="border-2 border-[#FCA311] rounded-lg grow"></canvas>
+
+           <div class="flex justify-around w-[100%] mt-3">
+            <div class="flex text-sm text-gray-600">
+                <label for="file-upload"
+                    class="relative cursor-pointer bg-[#0A1428] text-[#fff] h-[40px] flex items-center p-[1rem] rounded-md font-medium  focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                    <span>Upload a file</span>
+                    <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                </label>
+            </div>
+
+            <div class="">
+                <input type="button" class="cursor-pointer bg-[#14213D] text-[#fff] h-[40px] flex items-center px-[1rem] rounded-md font-medium" value="Download" id="download">
+            </div>
+           </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
